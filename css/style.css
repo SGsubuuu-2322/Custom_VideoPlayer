@@ -20,7 +20,8 @@ h1 {
 }
 
 .screen {
-  /* width: 50%; */
+  width: 60%;
+  min-height: 0%;
   cursor: pointer;
   background-color: #000 !important;
   border-top-right-radius: 10px;
@@ -30,12 +31,34 @@ h1 {
 .controls {
   background-color: #333;
   color: #fff;
+  width: 60%;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
+  margin-bottom: 20px;
+}
+
+.controls .btn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.controls .fa-play {
+  color: #28a745;
+}
+.controls .fa-stop {
+  color: #dc3545;
+}
+.controls .fa-pause {
+  color: #fff;
+}
+
+.controls .btn:focus{
+    outline: 0;
 }
 
 @media (max-width: 800px) {
