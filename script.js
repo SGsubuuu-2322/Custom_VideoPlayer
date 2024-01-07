@@ -29,7 +29,8 @@ function setVideoProgress() {
 }
 
 function stopVideo() {
-  return true;
+  video.currentTime = 0;
+  video.pause();
 }
 
 video.addEventListener("click", toggleVideoStatus);
