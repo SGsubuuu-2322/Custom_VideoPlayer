@@ -21,7 +21,7 @@ function togglePlayIcon() {
 }
 
 function updateProgress() {
-  return true;
+  progress.value = (video.currentTime / video.duration) * 100;
 }
 
 function setVideoProgress() {
